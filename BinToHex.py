@@ -9,6 +9,7 @@ def binary():
   binary = input("\nEnter The Binary:  ")
   hex = f'{int(binary, 2):X}'
   print("\nThe Hex is:",hex,"\n")
+  print("---------------------")
 
 #Hexadecimal to binary
 def hex():
@@ -16,6 +17,7 @@ def hex():
   intValue = int(hexValue, base=16)
   binValue = str(bin(intValue))[2:].zfill(8)
   print("\nIn binary is:",binValue,"\n")
+  print("---------------------")
 
 #infinite loop of converter
 while True:  
