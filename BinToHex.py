@@ -12,9 +12,10 @@ def binary():
 
 #Hexadecimal to binary
 def hex():
-  hex1 = input("\nEnter the Hex:  ")
-  hex1 = f'{0xABC123EFFF:0>42b}'
-  print("\nIn binary is:",hex1,"\n")
+  hexValue = input("\nEnter the Hex:  ")
+  intValue = int(hexValue, base=16)
+  binValue = str(bin(intValue))[2:].zfill(8)
+  print("\nIn binary is:",binValue,"\n")
 
 #infinite loop of converter
 while True:  
